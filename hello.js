@@ -28,9 +28,7 @@ const bubble_sort = arr => {
                 arr[j + 1] = tamp;
             }
         }
-
     }
-
 }
 bubble_sort(arr)
 console.log(arr);
