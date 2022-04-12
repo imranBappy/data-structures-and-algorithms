@@ -14,7 +14,7 @@ int main()
         7, // 6
         8, // 7
     };
-    int result = binary_search(arr, 0, 7, 5);
+    int result = binary_search(arr, 0, 7, 3);
     printf("%d\n", result);
     return 0;
 }
@@ -34,10 +34,11 @@ int binary_search(int data[], int lb, int ub, int item)
         {
             end = mid - 1;
         }
-        if (data[mid] < item)
+        else
         {
             start = mid + 1;
         }
+        mid = (start + end) / 2;
     }
 
     return -1;
